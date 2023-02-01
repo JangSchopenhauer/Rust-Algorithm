@@ -12,7 +12,7 @@ This repository's purpose is managing my study works.
   After I feel myself fluent at Rust Language, I need to make my own small project which I can use it at workspace
 
   this file is edit by https://gist.github.com/ihoneymon/652be052a0727ad59601 
-  Markdown basic syntax reference URL : https://www.markdownguide.org/basic-syntax/  
+    Markdown basic syntax reference URL : https://www.markdownguide.org/basic-syntax/  
 
   how to git push or commit 
   -------------------------
