@@ -12,3 +12,12 @@ This repository's purpose is managing my study works.
   After I feel myself fluent at Rust Language, I need to make my own small project which I can use it at workspace
 
   this file is edit by https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+  how to git push or commit 
+    -------------------------
+    ```
+    git status <--- for check what is changed
+    git add <--- their is more options but you can use just this
+    git commit -m "comment" <--- comment is for explain what has changed or purpose or something
+    git push <--- after this step, it will merged with main branch... maybe
+    ```
