@@ -1,0 +1,46 @@
+use std::io;
+use std::io::stdin;
+
+fn main() {
+    
+    let mut input_num = String::new();
+    io::stdin().read_line(&mut input_num).expect("Failed to read line");
+    let mut a : i32 = input_num.trim().parse().expect("Please input interger"); // 스트링을 숫자로 변환하는 함수를 추가적용시켜야함.
+    let mut input_num = String::new();
+    io::stdin().read_line(&mut input_num).expect("Failed to read line");
+    let mut b : i32 = input_num.trim().parse().expect("Please input integer"); // 이하 동일
+    
+    println!("{} \n {}", a,b);
+    
+//    let mut c = digit_value(&b);
+//    let mut value_temp : Vec<i32> = Vec::new();
+//
+//    for i=0 in c {  // c 값의 횟수만큼 나눠서 a에 곱한다.
+//        let value_temp[i] = &a * (b% i32::pow(10, i+1)
+//        i +=1;
+//        println!("{}",value_temp[i]);
+//    }
+//
+//    let mut result = 0;
+//
+//    for i in value_temp[] {
+//        result = result + value_temp[i] * i32::pow(10, i+1);
+//    }
+//
+//    println!("{}",result);
+}
+
+
+//10진수로 몇자리 수인지 알아내는 함수
+ //pub fn digit_value ( &target : i32) -> i32 {
+ //    let mut count_num : i32 = 0; // 10진수 체크용
+ //    let mut result :i32 = &target; // 대상이 되는 변수의 몫 임시 저장용도
+ //
+ //    while result !=0 {
+ //        result = result / 10 // target 을 10으로 나눈 몫 저장.
+ //            if result !=0 {
+ //                count_num += 1; // 몫이 0 이 아니라면 10진수 하나 상승
+ //            }
+ //    }
+ //    count_num
+ //}
