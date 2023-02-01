@@ -14,7 +14,7 @@ This repository's purpose is managing my study works.
   this file is edit by https://gist.github.com/ihoneymon/652be052a0727ad59601
 
   how to git push or commit 
-    -------------------------
+  -------------------------
     ```
     git status <--- for check what is changed
     git add <--- their is more options but you can use just this
