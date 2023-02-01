@@ -1,4 +1,5 @@
 use std::io;
+use std::io::stdin;
 
 
 fn main() {
@@ -10,9 +11,18 @@ fn main() {
 
 //    let a : i32 = get_value();
     println!("write value a, b, c. separate each as Enter");
-    let a = get_value().trim().parse::<i32>().unwrap();
-    let b = get_value().trim().parse::<i32>().unwrap();
-    let c = get_value().trim().parse::<i32>().unwrap();
+    let mut inputString = String::new();
+    io::stdin().read_line(&mut inputString).expect("Wrong input");
+    let mut inputValue : Vec<&str> = inputString.split(' ').collect();
+
+    let mut a = &inputValue[0];
+    let mut b = &inputValue[1];
+    let mut c = &inputValue[2];
+
+    let mut a = convert_u32(&a);
+    let mut b = convert_u32(&b);
+    let mut c = convert_u32(&c);
+
     println!("value a is : {}",a);
     println!("value b is : {}",b);
     println!("value c is : {}",c);
@@ -39,3 +49,10 @@ fn get_value() -> String {
     buffer
 }
 
+fn convert_u32 (input_value : &str ) -> u32 {
+    let a : u32 = match input_value.trim().parse(){
+        Ok(a) => a,
+        Err(error) => { panic!("There was a problem converting the value {:?}",error)},
+    };
+    a
+}
