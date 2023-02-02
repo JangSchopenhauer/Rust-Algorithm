@@ -1,1 +1,27 @@
 git add . ...
+
+
+==
+git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   Algo_stud_space/rest/src/main.rs
+	modified:   gitpush.sh
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   push.log
+
+==
+git commit -m  commit
+[main 9c9f23e]  commit
+ 2 files changed, 19 insertions(+), 8 deletions(-)
+
+==
+git push!
+fatal: protocol 'JangSchopenhauer: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@https' is not supported
+git push Success~!
