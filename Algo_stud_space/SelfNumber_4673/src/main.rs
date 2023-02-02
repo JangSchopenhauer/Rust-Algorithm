@@ -1,19 +1,25 @@
+fn d(n: i32) -> i32 {
+    let mut sum = n;
+    let mut m = n;
+    while m > 0 {
+        sum += m % 10;
+        m /= 10;
+    }
+    sum
+}
+
 fn main() {
-    let mut numbers = [true; 10001];
-    for i in 1..10000 {
-        let mut n = i;
-        let mut m = i;
-        while n > 0 {
-            m += n % 10;
-            n /= 10;
-        }
-        if m <= 10000 {
-            numbers[m as usize] = false;
+    let mut is_self_number = [false; 10001];
+    for i in 1..10001 {
+        let mut j = d(i);
+        while j < 10001 {
+            is_self_number[j as usize] = true;
+            j = d(j);
         }
     }
-    for i in 1..10000 {
-        if numbers[i as usize] {
-            println!("{} is a self number", i);
+    for i in 1..10001 {
+        if !is_self_number[i as usize] {
+            println!("{}", i);
         }
     }
 }
